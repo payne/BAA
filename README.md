@@ -4,6 +4,7 @@ Budget Analyst’s Assistant: A simple parse, table, choose, then interpolate pr
 The source for this project has gone private (to bitbucket.org).  This repo will have the exercise descriptions.  Eventually, sample solutions too.
 
 Here is the plan.  We'll see how things go:
+
 1. exercise 1 -- e1 -- create a high level wireframe based on https://codepen.io/wizly/pen/BlKxo/ with four tabs
    1. Home -- gives an overview of using the program
    2. CSV -- Load the CSV into the program
