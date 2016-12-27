@@ -11,4 +11,6 @@ left over from the prototype.   You'll be asked to add in similar content in a f
 
 When you have your solution working, please make a sub-directory with your solution (use your github login for your subdirectory name).  Then send me a pull request.
 
+https://www.freecodecamp.com/challenges/save-your-code-revisions-forever-with-git is one way to learn some git.
+
 ![example exercise 1 solution](exercise1.gif)
