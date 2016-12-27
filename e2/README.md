@@ -10,3 +10,7 @@ Here is a random reference that helps some.  The bit about how to do a full widt
 
 https://getbootstrap.com/examples/grid/
 
+
+The file, t.html, is the HTML table you see in the image.
+It was extracted using chrome dev tools.
+
