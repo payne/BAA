@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>simple index for exericse 3</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <script src="../build/app.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/payne/BAA/master/js/jquery.csv.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <h2>Text Area CSV to HTML Table</h2>
+      <p>Table should be between the two hr tags.</p>
+     <hr>
+      <div id='table-container'></div>
+      <hr>
+<form>
+<textarea id='src' rows=10 cols=60>
+vendor, date, amount, comment
+HyVee, 11/19/2016, 7.86, breakfast
+Amazon, 11/19/2016, 31.77, jQuery book
+</textarea>
+<button id="btnToTable">Parse to Table!</button>
+</form>
+  </p>
+</div><!-- /.container -->
+
+
+  <script>
+$(document).ready(function() {
+  $("#btnToTable").click(function() {
+    console.log("Saw btn click.");
+    //TODO: get the data from the textarea.  val not text
+    //TODO: parse the csv to a two dimensional array
+    console.log("csv_data.length is " + csv_data.length);
+      
+    var idValue = "table-container";
+    ArrayToTable.insertInDom(csv_data , idValue);
+    console.log("Done calling it!");
+    return false; // no bubble up, please.   w/o `return false` the change to the DOM does not stay around
+});
+
+});
+
+</script>
+</body>
+</html>

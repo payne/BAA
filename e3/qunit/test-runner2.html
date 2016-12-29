@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>QUnit basic example</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.0.1.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+    <div id="tablePlaceholder"></div>
+    <textarea name='src' id='src' rows=10 cols=60>
+vendor, date, amount, comment
+HyVee, 11/19/2016, 7.86, breakfast
+Amazon, 11/19/2016, 31.77, jQuery book
+</textarea>
+  </div>
+  <script src="../build/app.bundle.js"></script><!-- created with browserfy, givesuse ArrayToTable.insertInDom() -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://rawgit.com/payne/BAA/master/js/jquery.csv.min.js"></script>
+  <script src="https://code.jquery.com/qunit/qunit-2.0.1.js"></script>
+  <script>
+    /* global QUnit */
+    QUnit.test( "Parse textArea data to CSV then build table", function( assert ) {
+      console.log("Hi there from test-runner2.html");
+      //TODO: Use jQuery to get the val() of the textarea with id=src
+      //TODO: convert that string to a two dimensional array
+      console.log("csv_data.length is " + csv_data.length);
+      assert.equal(csv_data.length,3);
+      assert.equal(csv_data[0].length,4);
+      assert.equal(csv_data[1].length,4);
+      assert.equal(csv_data[2].length,4);
+      
+      //TODO: Write the object and function ArrayToTable.insertInDom in source/ArrayToTable.js
+      //TODO: Don't forget to use `gulp build` to transform it to the app.bundle.js brought in above...
+      var idValue = "tablePlaceholder";
+      ArrayToTable.insertInDom(csv_data , idValue);
+      var qf = $("#"+idValue);
+      var rowCount = $('#qunit-fixture tr').length;
+      assert.equal(rowCount, 3);
+    });
+  </script>
+</body>
+</html>
