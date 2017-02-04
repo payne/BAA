@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <title>BAA Ex. 02</title>
+</head>
+
+<body>
+<div class="container"><h1>Bootstrap  tab panel example (using nav-pills)</h1></div>
+<div id="exTab1" class="container">	
+<ul  class="nav nav-pills">
+			<li class="active">
+        <a  href="#1a" data-toggle="tab">Home</a>
+			</li>
+			<li><a href="#2a" data-toggle="tab">CSV</a>
+			</li>
+			<li><a href="#3a" data-toggle="tab">Build madlib</a>
+			</li>
+  		<li><a href="#4a" data-toggle="tab">View Letter</a>
+			</li>
+		</ul>
+
+			<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1a">
+          <h3>Content's background color is the same for the tab</h3>
+          <p>This div has id 1a.</p>
+				</div>
+				<div class="tab-pane" id="2a">
+          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+          <p>This div has id 2a.</p>
+				</div>
+        <div class="tab-pane" id="3a">
+          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+          <p>This div has id 3a.</p>
+          <div class="col-md-8">
+<table border="10" class="table table-striped table-condensed dataTable no-footer" id="table-container-table" role="grid" aria-describedby="table-container-table_info"><thead><tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="table-container-table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="vendor: activate to sort column descending" style="width: 388px;">vendor</th><th class="sorting" tabindex="0" aria-controls="table-container-table" rowspan="1" colspan="1" aria-label=" date: activate to sort column ascending" style="width: 434px;"> date</th><th class="sorting" tabindex="0" aria-controls="table-container-table" rowspan="1" colspan="1" aria-label=" amount: activate to sort column ascending" style="width: 414px;"> amount</th><th class="sorting" tabindex="0" aria-controls="table-container-table" rowspan="1" colspan="1" aria-label=" comment: activate to sort column ascending" style="width: 476px;"> comment</th></tr></thead><tbody><tr role="row" class="odd"><td class="sorting_1">Amazon</td><td> 11/19/2016</td><td> 31.77</td><td> jQuery book</td></tr><tr role="row" class="even"><td class="sorting_1">Amazon</td><td> 11/19/2016</td><td> 31.77</td><td> jQuery book</td></tr><tr role="row" class="odd"><td class="sorting_1">Amazon</td><td> 11/19/2016</td><td> 31.77</td><td> jQuery book</td></tr><tr role="row" class="even"><td class="sorting_1">Amazon</td><td> 11/19/2016</td><td> 31.77</td><td> jQuery book</td></tr><tr role="row" class="odd"><td class="sorting_1">Amazon</td><td> 11/19/2016</td><td> 31.77</td><td> jQuery book</td></tr><tr role="row" class="even"><td class="sorting_1">Amazon</td><td> 11/19/2016</td><td> 31.77</td><td> jQuery book</td></tr><tr role="row" class="odd"><td class="sorting_1">Amazon</td><td> 11/19/2016</td><td> 31.77</td><td> jQuery book</td></tr><tr role="row" class="even"><td class="sorting_1">HyVee</td><td> 11/19/2016</td><td> 7.86</td><td> breakfast</td></tr><tr role="row" class="odd"><td class="sorting_1">HyVee</td><td> 11/19/2016</td><td> 7.86</td><td> breakfast</td></tr><tr role="row" class="even"><td class="sorting_1">HyVee</td><td> 11/19/2016</td><td> 7.86</td><td> breakfast</td></tr><tr role="row" class="odd"><td class="sorting_1">HyVee</td><td> 11/19/2016</td><td> 7.86</td><td> breakfast</td></tr><tr role="row" class="even"><td class="sorting_1">HyVee</td><td> 11/19/2016</td><td> 7.86</td><td> breakfast</td></tr><tr role="row" class="odd"><td class="sorting_1">HyVee</td><td> 11/19/2016</td><td> 7.86</td><td> breakfast</td></tr><tr role="row" class="even"><td class="sorting_1">HyVee</td><td> 11/19/2016</td><td> 7.86</td><td> breakfast</td></tr></tbody></table>
+				</div>
+				<div class="col-md-4">
+				  <ul>
+				    <li>List Element 01</li>
+				  </ul>
+				  </div>
+				  <div class="col-md-12">
+				    This is my full width paragraph. This is my full width paragraph. This is my full width paragraph.
+				    This is my full width paragraph. This is my full width paragraph. This is my full width paragraph.
+				    This is my full width paragraph. 
+				  </div>
+				</div><!-- div id=3a -->
+          <div class="tab-pane" id="4a">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+          <p>This div has id 4a.</p>
+				</div>
+			</div>
+  </div>
+
+
+
+
+ 
+
+</body>
+</html>
